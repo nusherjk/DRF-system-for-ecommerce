@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="init">
+    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="dockerfile prep">
+      <change afterPath="$PROJECT_DIR$/dg/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dg.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DockerFIle" beforeDir="false" afterPath="$PROJECT_DIR$/DockerFIle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,17 +28,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dg" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dg\dg" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="doogdoogi_api" type="Python.DjangoServer" factoryName="Django server">
-      <module name="doogdoogi_api" />
+      <module name="dg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Strix\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -68,7 +74,7 @@
       <workItem from="1610305998532" duration="1087000" />
       <workItem from="1610386652156" duration="4530000" />
       <workItem from="1610393846141" duration="109000" />
-      <workItem from="1610394001574" duration="213000" />
+      <workItem from="1610394001574" duration="1218000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -77,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610394036565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dockerfile prep">
+      <created>1610394240519</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610394240519</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="dockerfile prep" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockerfile prep" />
   </component>
 </project>
