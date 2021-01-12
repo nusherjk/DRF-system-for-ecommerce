@@ -1,101 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="initial setup with framework">
-      <change afterPath="$PROJECT_DIR$/static/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/about.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/clients/client-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-details-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-details-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/portfolio/portfolio-details-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/slide/slide-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/slide/slide-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/slide/slide-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/team/team-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.compat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/animate.css/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/animations.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/boxicons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/boxicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/css/transformations.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/boxicons/fonts/boxicons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/icofont/fonts/icofont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/icofont/fonts/icofont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/icofont/icofont.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/isotope-layout/isotope.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery.easing/jquery.easing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/jquery/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/assets/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/assets/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/assets/owl.theme.default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/assets/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/assets/owl.theme.green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/assets/owl.theme.green.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/assets/owl.video.play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/owl.carousel/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/php-email-form/validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/vendor/venobox/venobox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/inner-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/landing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/portfolio-details.html" afterDir="false" />
+    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="dummy html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/doog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +83,8 @@
       <workItem from="1610305998532" duration="1087000" />
       <workItem from="1610386652156" duration="4530000" />
       <workItem from="1610393846141" duration="109000" />
-      <workItem from="1610394001574" duration="2051000" />
+      <workItem from="1610394001574" duration="2139000" />
+      <workItem from="1610433892413" duration="2383000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -204,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610395409029</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dummy html">
+      <created>1610396098848</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610396098848</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +143,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="dockerfile prep" />
     <MESSAGE value="initial setup with framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial setup with framework" />
+    <MESSAGE value="dummy html" />
+    <option name="LAST_COMMIT_MESSAGE" value="dummy html" />
   </component>
 </project>
