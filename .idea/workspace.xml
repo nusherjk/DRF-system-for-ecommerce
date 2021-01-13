@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="dummy html">
+    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="models update">
+      <change afterPath="$PROJECT_DIR$/dg/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/doog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/doog/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -84,7 +90,8 @@
       <workItem from="1610386652156" duration="4530000" />
       <workItem from="1610393846141" duration="109000" />
       <workItem from="1610394001574" duration="2139000" />
-      <workItem from="1610433892413" duration="2383000" />
+      <workItem from="1610433892413" duration="5576000" />
+      <workItem from="1610516937271" duration="680000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -121,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610396098848</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="models update">
+      <created>1610467004464</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610467004464</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +158,7 @@
     <MESSAGE value="dockerfile prep" />
     <MESSAGE value="initial setup with framework" />
     <MESSAGE value="dummy html" />
-    <option name="LAST_COMMIT_MESSAGE" value="dummy html" />
+    <MESSAGE value="models update" />
+    <option name="LAST_COMMIT_MESSAGE" value="models update" />
   </component>
 </project>

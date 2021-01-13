@@ -24,7 +24,7 @@ class Product(models.Model):
     size = models.CharField(max_length=20) # Probable JSON field
     #colors
     availability = models.BooleanField()
-    category_id = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category_id = models.ForeignKey(Category, on_delete=models.CASCADE)# ManytoManyfields because of some product might have multiple category
     details = models.CharField(max_length=2500)
 
 
