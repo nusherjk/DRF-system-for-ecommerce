@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="models update">
-      <change afterPath="$PROJECT_DIR$/dg/serializers.py" afterDir="false" />
+    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="migration update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/doog/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/doog/urls.py" afterDir="false" />
     </list>
@@ -91,7 +89,10 @@
       <workItem from="1610393846141" duration="109000" />
       <workItem from="1610394001574" duration="2139000" />
       <workItem from="1610433892413" duration="5576000" />
-      <workItem from="1610516937271" duration="680000" />
+      <workItem from="1610516937271" duration="2541000" />
+      <workItem from="1610590457172" duration="595000" />
+      <workItem from="1612720528042" duration="73000" />
+      <workItem from="1612852014713" duration="2589000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -135,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610467004464</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="rest framework setup update">
+      <created>1610517644407</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610517644407</updated>
+    </task>
+    <task id="LOCAL-00008" summary="migration update">
+      <created>1610517694472</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610517694472</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +174,8 @@
     <MESSAGE value="initial setup with framework" />
     <MESSAGE value="dummy html" />
     <MESSAGE value="models update" />
-    <option name="LAST_COMMIT_MESSAGE" value="models update" />
+    <MESSAGE value="rest framework setup update" />
+    <MESSAGE value="migration update" />
+    <option name="LAST_COMMIT_MESSAGE" value="migration update" />
   </component>
 </project>

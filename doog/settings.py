@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +26,8 @@ SECRET_KEY = '%e1n766ud4w%h=s)b$e$i2_e_e%q-hyw)6pd)ersj3o^&j^%2s'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Application definition
 
@@ -53,6 +54,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'doog.urls'
 AUTH_USER_MODEL ='dg.User'
+LOGIN_REDIRECT_URL = '/api/users/'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
