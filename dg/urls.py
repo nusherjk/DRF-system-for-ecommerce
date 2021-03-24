@@ -19,9 +19,13 @@ from .views import UserViwset, ProductViewset
 from rest_framework import routers
 
 router = routers.DefaultRouter()
+
+#register = router.register(r'register')
 user = router.register(r'users', UserViwset)
 product = router.register(r'products', ProductViewset)
 
 urlpatterns = [
     path('api/', include(router.urls))
+
+
 ]
