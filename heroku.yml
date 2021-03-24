@@ -2,7 +2,7 @@
 setup:
   addons:
     - plan: heroku-postgresql
-      as: DATABASE
+      as: db
   config:
     POSTGRES_DB: postgres
     POSTGRES_USER: postgres
