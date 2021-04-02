@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="adding image in product">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/doog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DockerFIle" beforeDir="false" afterPath="$PROJECT_DIR$/DockerFIle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +92,7 @@
       <workItem from="1613027629819" duration="3490000" />
       <workItem from="1613489853596" duration="262000" />
       <workItem from="1616569524876" duration="4912000" />
+      <workItem from="1616826167011" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
