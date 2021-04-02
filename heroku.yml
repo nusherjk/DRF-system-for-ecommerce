@@ -11,7 +11,7 @@ build:
   docker:
     web: DockerFIle
 
-run: python manage.py runserver
+run: python manage.py makemigration && python manage.py migrate && python manage.py runserver
 
 release:
   image: web
