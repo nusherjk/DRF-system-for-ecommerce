@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="adding image in product">
-      <change beforePath="$PROJECT_DIR$/DockerFIle" beforeDir="false" afterPath="$PROJECT_DIR$/DockerFIle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +93,7 @@
       <workItem from="1613489853596" duration="262000" />
       <workItem from="1616569524876" duration="4912000" />
       <workItem from="1616826167011" duration="13000" />
+      <workItem from="1617340008348" duration="1036000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -157,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612861561918</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adding image in product">
+      <created>1617340211712</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617340211712</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
