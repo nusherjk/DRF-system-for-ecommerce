@@ -8,7 +8,9 @@ build:
     web: DockerFIle
 
 run:
-    web: gunicorn doog.wsgi
+    web:
+      - gunicorn doog.wsgi migrate
+      - gunicorn doog.wsgi
 
 release:
 
