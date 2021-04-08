@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="remove templates">
+    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="procfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heroku.yml" beforeDir="false" afterPath="$PROJECT_DIR$/heroku.yml" afterDir="false" />
     </list>
@@ -96,7 +96,7 @@
       <workItem from="1616826167011" duration="13000" />
       <workItem from="1617340008348" duration="3191000" />
       <workItem from="1617888890392" duration="3451000" />
-      <workItem from="1617893060919" duration="1224000" />
+      <workItem from="1617893060919" duration="1321000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -231,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617894401439</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="procfile">
+      <created>1617894521587</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1617894521587</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +270,7 @@
     <MESSAGE value="tokenauth and create user endpoint established" />
     <MESSAGE value="heroku try" />
     <MESSAGE value="remove templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove templates" />
+    <MESSAGE value="procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="procfile" />
   </component>
 </project>

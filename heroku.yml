@@ -7,9 +7,11 @@ build:
   docker:
     web: DockerFIle
 
-
-web: bin/start-pgbouncer-stunnel gunicorn dg.wsgi
+run:
+    web: bin/start-pgbouncer-stunnel gunicorn dg.wsgi
 
 release:
+
+  command:
+    - python manage.py collectstatic
   image: web
-  command: python manage.py collectstatic
