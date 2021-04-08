@@ -8,7 +8,7 @@ build:
     web: DockerFIle
 
 run:
-    web: bin/start-pgbouncer-stunnel gunicorn dg.wsgi
+    web: gunicorn dg.wsgi
 
 release:
 
