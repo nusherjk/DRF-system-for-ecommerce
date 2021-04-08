@@ -6,7 +6,14 @@ from rest_framework.decorators import action
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.status import HTTP_200_OK
 from rest_framework.permissions import IsAuthenticated, AllowAny
+from django.http import HttpResponse
 # Create your views here.
+
+
+
+def index(request):
+    return HttpResponse("<h1>This Api is working</h1>")
+
 
 class UserViwset(ModelViewSet):
     permission_classes = [AllowAny]
