@@ -21,3 +21,8 @@ A Django Rest framework Based API for E-commerce system . build on docker image
 
 - for migration 
 `docker-compose run web manage.py migrate`
+
+
+##  staging
+
+- https://doogdoogi.herokuapp.com/
