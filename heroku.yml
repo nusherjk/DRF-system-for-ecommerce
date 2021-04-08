@@ -2,16 +2,13 @@ setup:
   addons:
     - plan: hobby-dev
       as: DATABASE
-    config:
-        POSTGRES_DB: postgres
-        POSTGRES_USER: postgres
-        POSTGRES_PASSWORD: postgres
 
 build:
   docker:
     web: DockerFIle
 
-run: python manage.py makemigration && python manage.py migrate && python manage.py runserver
+
+web: bin/start-pgbouncer-stunnel gunicorn dg.wsgi
 
 release:
   image: web

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="remove templates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/doog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heroku.yml" beforeDir="false" afterPath="$PROJECT_DIR$/heroku.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,7 @@
       <workItem from="1616826167011" duration="13000" />
       <workItem from="1617340008348" duration="3191000" />
       <workItem from="1617888890392" duration="3451000" />
-      <workItem from="1617893060919" duration="925000" />
+      <workItem from="1617893060919" duration="1224000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -218,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617893075593</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="remove templates">
+      <created>1617894375834</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617894375834</updated>
+    </task>
+    <task id="LOCAL-00019" summary="remove templates">
+      <created>1617894401439</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1617894401439</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +261,7 @@
     <MESSAGE value="hero" />
     <MESSAGE value="fix" />
     <MESSAGE value="tokenauth and create user endpoint established" />
+    <MESSAGE value="heroku try" />
     <MESSAGE value="remove templates" />
     <option name="LAST_COMMIT_MESSAGE" value="remove templates" />
   </component>
