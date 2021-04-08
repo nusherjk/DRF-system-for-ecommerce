@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="yml fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heroku.yml" beforeDir="false" afterPath="$PROJECT_DIR$/heroku.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +96,7 @@
       <workItem from="1616826167011" duration="13000" />
       <workItem from="1617340008348" duration="3191000" />
       <workItem from="1617888890392" duration="3451000" />
-      <workItem from="1617893060919" duration="3880000" />
+      <workItem from="1617893060919" duration="3990000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -288,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617896543383</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="yml fix">
+      <created>1617897229795</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1617897229795</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -9,8 +9,7 @@ build:
 
 run:
     web:
-      - gunicorn doog.wsgi migrate
-      - gunicorn doog.wsgi
+      python manage.py migrate && gunicorn doog.wsgi
 
 release:
 
