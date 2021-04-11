@@ -18,13 +18,13 @@ class Product(models.Model):
     id = models.UUIDField(auto_created=True, default=uuid4, primary_key=True, unique=True)
     name = models.CharField(max_length=300)
     price = models.FloatField()
-    images = models.ImageField()
+    images = models.ImageField(null=True)
     #brand
     description = models.CharField(max_length=2500)
     size = models.CharField(max_length=20) # Probable JSON field
     #colors
     availability = models.BooleanField()
-    category_id = models.ForeignKey(Category, on_delete=models.CASCADE)# ManytoManyfields because of some product might have multiple category
+    category_id = models.ForeignKey(Category, related_name='cat_id', on_delete=models.CASCADE)# ManytoManyfields because of some product might have multiple category
     details = models.CharField(max_length=2500)
 
 

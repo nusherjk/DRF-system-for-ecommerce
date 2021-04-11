@@ -26,3 +26,11 @@ A Django Rest framework Based API for E-commerce system . build on docker image
 ##  staging
 
 - https://doogdoogi.herokuapp.com/
+
+
+### TODO
+
+1. ~~Add product has bugs .. have to fix them~~
+2. create category and product,  other individual features should have different permission classes.
+3. create user roles.
+4. search endpoints.
