@@ -53,7 +53,7 @@ class ProductViewset(ModelViewSet):
         
 
         if(serializer.is_valid()):
-            serializer.save()
+            serializer.save(images = self.request.data.get('images'))
             return Response({"status": HTTP_200_OK, "data": data})
         else:
             print( serializer.errors)

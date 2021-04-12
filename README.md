@@ -34,3 +34,8 @@ A Django Rest framework Based API for E-commerce system . build on docker image
 2. create category and product,  other individual features should have different permission classes.
 3. create user roles.
 4. search endpoints.
+5. test out why images are not getting uploaded.
+   1. test in the staging server.
+   2. check the slugs.
+    
+6. plan the whole api endpoints.

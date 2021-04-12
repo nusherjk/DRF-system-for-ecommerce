@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="yml fix">
+    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="product and categorry fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/doog/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +103,8 @@
       <workItem from="1617902413699" duration="2038000" />
       <workItem from="1618067349047" duration="1989000" />
       <workItem from="1618161288700" duration="3845000" />
-      <workItem from="1618176956927" duration="3288000" />
+      <workItem from="1618176956927" duration="3558000" />
+      <workItem from="1618203928905" duration="1131000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -311,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617897303622</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="product and categorry fix">
+      <created>1618180621560</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1618180621560</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +351,7 @@
     <MESSAGE value="procfile" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="yml fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="yml fix" />
+    <MESSAGE value="product and categorry fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="product and categorry fix" />
   </component>
 </project>
