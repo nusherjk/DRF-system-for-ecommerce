@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import UserViwset, ProductViewset, index, CategoryViwset
+from .views import UserViwset,  index, CategoryViwset, ProductViewset
 from rest_framework import routers
 
 router = routers.DefaultRouter()
@@ -23,6 +23,7 @@ router = routers.DefaultRouter()
 #register = router.register(r'register')
 user = router.register(r'users', UserViwset)
 product = router.register(r'products', ProductViewset)
+
 category = router.register(r'categories', CategoryViwset)
 
 urlpatterns = [

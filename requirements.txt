@@ -5,3 +5,4 @@ Pillow==8.1.0
 django-cors-headers
 gunicorn
 django-heroku
+drf-nested-routers

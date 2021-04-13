@@ -3,6 +3,8 @@ from .models import User, Product, Category
 
 
 class UserSerializer(serializers.ModelSerializer):
+
+
     class Meta:
         model = User
         fields = '__all__'
@@ -10,9 +12,12 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
+
+    category_id = serializers.SlugRelatedField(slug_field="name", queryset=Category.objects.all())
     class Meta:
         model = Product
-        fields = ("name",
+        fields = ("id",
+                    "name",
                   "price",
                   'images',
                   'description',
