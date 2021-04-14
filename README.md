@@ -39,3 +39,6 @@ A Django Rest framework Based API for E-commerce system . build on docker image
    ~~2. check the slugs.~~
     
 6. plan the whole api endpoints.
+7. ~~Order still needs to send an fake user id but it should not~~
+8. User creation is not working need better solution
+9. ~~Order get method only show the list of orders by that perticular user~~

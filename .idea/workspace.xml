@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="null image fix in post">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="product fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/doog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +110,9 @@
       <workItem from="1618203928905" duration="5204000" />
       <workItem from="1618222119778" duration="2478000" />
       <workItem from="1618309861196" duration="85000" />
+      <workItem from="1618314481644" duration="41000" />
+      <workItem from="1618325505404" duration="6236000" />
+      <workItem from="1618414630622" duration="14018000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -329,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618205201729</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="product fixes">
+      <created>1618314500887</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1618314500887</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,6 +375,7 @@
     <MESSAGE value="yml fix" />
     <MESSAGE value="product and categorry fix" />
     <MESSAGE value="null image fix in post" />
-    <option name="LAST_COMMIT_MESSAGE" value="null image fix in post" />
+    <MESSAGE value="product fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="product fixes" />
   </component>
 </project>

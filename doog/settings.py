@@ -29,6 +29,17 @@ CORS_ALLOW_ALL_ORIGINS=True
 ALLOWED_HOSTS = ['*']
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+CORS_ALLOW_HEADERS = (
+    'xsrfheadername',
+    'xsrfcookiename',
+    'content-type',
+    'XSRF-TOKEN',
+)
+
+
+CSRF_COOKIE_NAME = "XSRF-TOKEN"
+
+
 
 # Application definition
 
@@ -142,7 +153,7 @@ REST_FRAMEWORK = {
 
     'DEFAULT_AUTHENTICATION_CLASSES': [
                             'rest_framework.authentication.BasicAuthentication',
-                            'rest_framework.authentication.SessionAuthentication',
+                            #'rest_framework.authentication.SessionAuthentication',
                             'rest_framework.authentication.TokenAuthentication',
                                         ]
 }

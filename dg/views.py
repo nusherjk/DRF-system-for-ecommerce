@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import *
-from .serializers import UserSerializer, ProductSerializer, CategorySerializer
+from .serializers import UserSerializer, ProductSerializer, CategorySerializer, OrderSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework.viewsets import ModelViewSet
@@ -99,5 +99,32 @@ class CategoryViwset(ModelViewSet):
             return Response({"status": HTTP_200_OK, "data": data})
         else:
             return Response("Form Data is not valid")
+
+
+class Orderviewset(ModelViewSet):
+
+    permission_classes = [IsAuthenticated]
+    queryset = Order.objects.all()
+    serializer_class = OrderSerializer
+
+    def get_queryset(self):
+        instance = Order.objects.filter(userid=self.request.user.id)
+        return instance
+
+    def perform_create(self, request):
+        data = self.request.data
+
+        #userid = request.context.get("request").user
+        #data["userid"] = userid.id
+
+        #print(self.serializer_class.context("request").user.id)
+        #data['userid'] = request.user
+        oserializer = OrderSerializer(data=data, context={'userid': self.request.user})
+
+        if(oserializer.is_valid()):
+            oserializer.save()
+            return Response(oserializer.data)
+        else:
+            print(oserializer.errors)
 
 
