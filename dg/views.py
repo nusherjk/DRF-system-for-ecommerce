@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from .models import *
-from .serializers import UserSerializer, ProductSerializer, CategorySerializer, OrderSerializer
+from .serializers import UserSerializer, ProductSerializer, CategorySerializer, OrderSerializer, ProfileSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import action
-from rest_framework.viewsets import ModelViewSet
+from rest_framework.viewsets import ModelViewSet,ViewSet, ReadOnlyModelViewSet
 from rest_framework.views import APIView
 from rest_framework.status import HTTP_200_OK
-from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser
-from django.http import HttpResponse
+from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser, IsAuthenticatedOrReadOnly
+from .permissions import IsSelforAdmin
+from django.http import HttpResponse, JsonResponse
 from django.core import serializers
 from django.shortcuts import get_object_or_404
 # Create your views here.
@@ -23,6 +24,17 @@ class UserViwset(ModelViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.all()
 
+
+
+    def get_permissions(self):
+        if self.action == 'list' or self.action == 'create':
+            permission_classes = [IsAdminUser]
+        else:
+            permission_classes = [IsSelforAdmin]
+
+        return [permission() for permission in permission_classes]
+
+
     @action(detail=True, methods=['post'])
     def perform_create(self, request):
         data =self.serializer_class(data=request.data)
@@ -34,15 +46,39 @@ class UserViwset(ModelViewSet):
 
 
 
+class ProfileViewset(ReadOnlyModelViewSet):
+    #permission_classes = [IsAuthenticated]
+    serializer_class = ProfileSerializer
+    queryset = User.objects.all()
+
+
+    def get_permissions(self):
+        if self.action == 'list':
+            permission_classes = [IsAdminUser]
+
+        elif(self.action == 'retrieve'):
+            permission_classes= [IsSelforAdmin]
+
+        else:
+            permission_classes = [IsAuthenticated]
+
+        return [permission() for permission in permission_classes]
+
 
 class ProductViewset(ModelViewSet):
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticatedOrReadOnly]
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
+    """
+    def get_permissions(self):
+        if(self.action=='list' or self.action== 'retrieve'):
+            permission_classes = [AllowAny]
+        else:
+            permission_classes = [IsAuthenticated]
+            
+        return [permission() for permission in permission_classes]
 
-
-
-
+    """
     @action(detail=True, methods=['post'])
     def perform_create(self, request):
         data = request.data

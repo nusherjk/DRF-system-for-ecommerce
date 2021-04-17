@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import UserViwset,  index, CategoryViwset, ProductViewset, Orderviewset
+from .views import UserViwset,  index, CategoryViwset, ProductViewset, Orderviewset, ProfileViewset
 from rest_framework import routers
 
 router = routers.DefaultRouter()
@@ -27,6 +27,9 @@ product = router.register(r'products', ProductViewset)
 category = router.register(r'categories', CategoryViwset)
 
 order = router.register(r'order', Orderviewset)
+
+profile = router.register(r'profile', ProfileViewset, basename='profile')
+
 
 urlpatterns = [
     path('', index, name="stand"),

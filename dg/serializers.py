@@ -11,6 +11,13 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 
+class ProfileSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'first_name', 'last_name', 'email','address', 'contactNumber')
+
+
 class ProductSerializer(serializers.ModelSerializer):
 
     category_id = serializers.SlugRelatedField(slug_field="name", queryset=Category.objects.all())

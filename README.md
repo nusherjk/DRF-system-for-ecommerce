@@ -32,6 +32,7 @@ A Django Rest framework Based API for E-commerce system . build on docker image
 
 1. ~~Add product has bugs .. have to fix them~~
 2. create category and product,  other individual features should have different permission classes.
+   - still authenticated users can  do product create. they shouldnt. 
 3. create user roles.
 4. search endpoints.
 5. ~~test out why images are not getting uploaded.~~
