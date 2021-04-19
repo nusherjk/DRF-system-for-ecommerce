@@ -20,12 +20,13 @@ def index(request):
 
 
 class UserViwset(ModelViewSet):
+
     permission_classes = [AllowAny]
     serializer_class = UserSerializer
     queryset = User.objects.all()
 
 
-
+    """
     def get_permissions(self):
         if self.action == 'list' or self.action == 'create':
             permission_classes = [IsAdminUser]
@@ -33,16 +34,18 @@ class UserViwset(ModelViewSet):
             permission_classes = [IsSelforAdmin]
 
         return [permission() for permission in permission_classes]
-
+    """
 
     @action(detail=True, methods=['post'])
     def perform_create(self, request):
-        data =self.serializer_class(data=request.data)
+        print(self.request.data)
+        data =self.serializer_class(data=self.request.data)
         if(data.is_valid()):
             data.save()
             return Response({"status": HTTP_200_OK, "data": data})
         else:
-            return Response("Form Data is not valid")
+            print(data.errors)
+            print("Form Data is not valid")
 
 
 

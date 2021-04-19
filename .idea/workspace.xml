@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="order fix">
-      <change afterPath="$PROJECT_DIR$/dg/permissions.py" afterDir="false" />
+    <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="permission classes modification with profileviewset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dg/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +110,9 @@
       <workItem from="1618314481644" duration="41000" />
       <workItem from="1618325505404" duration="6236000" />
       <workItem from="1618414630622" duration="14188000" />
-      <workItem from="1618690255817" duration="6941000" />
+      <workItem from="1618690255817" duration="7739000" />
+      <workItem from="1618739324035" duration="3691000" />
+      <workItem from="1618817038788" duration="4464000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -345,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618439305555</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="permission classes modification with profileviewset">
+      <created>1618698734188</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1618698734188</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +391,7 @@
     <MESSAGE value="null image fix in post" />
     <MESSAGE value="product fixes" />
     <MESSAGE value="order fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="order fix" />
+    <MESSAGE value="permission classes modification with profileviewset" />
+    <option name="LAST_COMMIT_MESSAGE" value="permission classes modification with profileviewset" />
   </component>
 </project>
