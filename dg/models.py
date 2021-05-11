@@ -13,16 +13,22 @@ class User(AbstractUser):
     object = UserManager()
 
 
+
+
 # Products models
 class Category(models.Model):
     id = models.UUIDField(auto_created=True, default=uuid4, primary_key=True, unique=True)
     name = models.CharField(max_length=300)
+    def __str__(self):
+        return self.name
 
 class Product(models.Model):
     id = models.UUIDField(auto_created=True, default=uuid4, primary_key=True, unique=True)
     name = models.CharField(max_length=300)
     price = models.FloatField()
     images = models.ImageField(null=True)
+    #images1 = models.ImageField(null=True)
+    #images1 = models.ImageField(null=True)
     #brand
     description = models.CharField(max_length=2500)
     size = models.CharField(max_length=20) # Probable JSON field
@@ -31,6 +37,14 @@ class Product(models.Model):
     category_id = models.ForeignKey(Category, related_name='cat_id', on_delete=models.CASCADE)# ManytoManyfields because of some product might have multiple category
     details = models.CharField(max_length=2500)
 
+    def __str__(self):
+        return self.name
+
+
+
+'''class Images(models.Model):
+    id = models.UUIDField(auto_created=True, default=uuid4, primary_key=True, unique=True)
+    image = models.ImageField(null=False);'''
 
 class ProductReview(models.Model):
     id = models.UUIDField(auto_created=True, default=uuid4, primary_key=True, unique=True)
