@@ -4,8 +4,9 @@ from .serializers import UserSerializer, ProductSerializer, CategorySerializer, 
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework.viewsets import ModelViewSet,ViewSet, ReadOnlyModelViewSet
+from django.views.generic import TemplateView
 from rest_framework.views import APIView
-from rest_framework.status import HTTP_200_OK
+from rest_framework.status import HTTP_200_OK, HTTP_403_FORBIDDEN, HTTP_404_NOT_FOUND
 from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser, IsAuthenticatedOrReadOnly
 from .permissions import IsSelforAdmin
 from django.http import HttpResponse, JsonResponse
@@ -17,6 +18,12 @@ from django.shortcuts import get_object_or_404
 
 def index(request):
     return HttpResponse("<h1>This Api is working</h1>")
+
+
+class Home(TemplateView):
+
+    template_name = "home.html"
+
 
 
 class UserViwset(ModelViewSet):
@@ -166,4 +173,49 @@ class Orderviewset(ModelViewSet):
         else:
             print(oserializer.errors)
 
+class Webhookviewset(APIView):
+    permission_classes = [AllowAny]
+    verify_token = "EAAEY6GWtTxUBABrrpNTHRf6lX8gnGRyxt3iZBWp9Do24WE6cnZCcCIgvO44OjsQZAzsSRV8ioT89mitN4wroZCwlAwLJPJZBpOkvcjJaRr2EcJcMMLBecOkWimtES3cUKXy9KZAaiBZAkHtKxAJvIyagYZC6UIDLhmUrwgDFhVKXB7Gkfv74Y6FEnvynBIyAIJUMrRgRsw5L7QZDZD"
 
+    def get(self, request):
+        '''
+
+        :param request:
+        :return:
+        '''
+        #print(request.GET.get())
+        mode = request.GET.get('hub.mode')
+        token = request.GET.get('hub.verify_token')
+        challenge = request.GET.get('hub.challenge')
+
+        if (mode and token):
+            if(mode== 'subscribe' and token == self.verify_token):
+                print("Webhook Verified")
+                return Response({"status": HTTP_200_OK, "data":challenge })
+            else:
+                return Response({"status": HTTP_403_FORBIDDEN})
+        else:
+            return Response({'status': HTTP_404_NOT_FOUND})
+
+    def post(self, request):
+        '''
+
+        :param request:
+        :return:
+        '''
+
+
+
+        body = request.body
+
+        if (body.object == 'page'):
+            for entry in body.entry:
+                webhook_event = entry.messaging[0]
+                print(webhook_event)
+            return Response("EVENT_RECEIVED")
+        else:
+            return Response({"status": HTTP_404_NOT_FOUND})
+
+    @classmethod
+    def get_extra_actions(cls):
+        return []

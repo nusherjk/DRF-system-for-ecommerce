@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f701724f-1485-404c-947e-6c404d480388" name="Default Changelist" comment="model fixess">
-      <change afterPath="$PROJECT_DIR$/dg/migrations/0003_alter_product_category_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dg/migrations/0004_auto_20210418_0956.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/499.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/499_Vavb3HE.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/499_wxZ3wBT.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/Screenshot_17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img_H52SlJP.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img_P3rZxBT.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img_YRoGTvG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img_p10OFy2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pro.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dg/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dg/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +117,7 @@
       <workItem from="1619632550489" duration="77000" />
       <workItem from="1620766699684" duration="2447000" />
       <workItem from="1635435355886" duration="2967000" />
+      <workItem from="1649913238493" duration="8439000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610394036565</created>
@@ -379,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620768647458</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="model fixess">
+      <created>1649913250037</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1649913250037</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

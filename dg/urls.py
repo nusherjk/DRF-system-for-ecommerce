@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import UserViwset,  index, CategoryViwset, ProductViewset, Orderviewset, ProfileViewset
+from .views import UserViwset,  index, Home,  CategoryViwset, ProductViewset, Orderviewset, ProfileViewset, Webhookviewset
 from rest_framework import routers
 
 router = routers.DefaultRouter()
@@ -29,10 +29,14 @@ category = router.register(r'categories', CategoryViwset)
 order = router.register(r'order', Orderviewset)
 
 profile = router.register(r'profile', ProfileViewset, basename='profile')
-
+### IMPORTANT MESSENGER WEBHOOK
+#webhook = router.register(r'webhook', Webhookviewset, basename='webhook')
 
 urlpatterns = [
     path('', index, name="stand"),
+    path('home/', Home.as_view(), name="landing"),
+    path('webhook/', Webhookviewset.as_view(), name="webhook"),
+
     path('api/', include(router.urls))
 
 
