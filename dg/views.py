@@ -8,7 +8,7 @@ from django.views.generic import TemplateView
 from rest_framework.views import APIView
 from rest_framework.status import HTTP_200_OK, HTTP_403_FORBIDDEN, HTTP_404_NOT_FOUND
 from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser, IsAuthenticatedOrReadOnly
-from .permissions import IsSelforAdmin
+from .permissions import IsProviderOrReadOnly, IsSelforAdmin
 from django.http import HttpResponse, JsonResponse
 from django.core import serializers
 from django.shortcuts import get_object_or_404
@@ -73,10 +73,16 @@ class ProfileViewset(ReadOnlyModelViewSet):
             permission_classes = [IsAuthenticated]
 
         return [permission() for permission in permission_classes]
+    
+
+    # TODO: Retrive data of the subject (Work Left!!!)
+    def retrieve(self, request, *args, **kwargs):
+        return Response({"Data":"kichu"})
 
 
 class ProductViewset(ModelViewSet):
-    permission_classes = [IsAuthenticatedOrReadOnly]
+    # permission_classes = [IsAuthenticatedOrReadOnly]
+    permission_classes = [AllowAny]
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
     """
@@ -125,15 +131,17 @@ class Productget(ModelViewSet):
         serilizer = serializers.serialize('json', data)
         return Response(serilizer)
 """
-
+# TODO: Providers can only select categories not create categories
 class CategoryViwset(ModelViewSet):
+    # permission_classes = [IsProviderOrReadOnly]
     permission_classes = [IsAdminUser]
     serializer_class = CategorySerializer
     queryset = Category.objects.all()
 
     def list(self, request, *args, **kwargs):
-
-        return self.queryset
+        data = self.queryset
+        serializer = serializers.serialize('json', data)
+        return Response(serializer)
 
     @action(detail=True, methods=['post'])
     def perform_create(self, request):

@@ -1,3 +1,4 @@
+from dataclasses import fields
 from django.db import models
 from django.contrib.auth.models import AbstractUser, UserManager
 from uuid import uuid4
@@ -8,9 +9,15 @@ from uuid import uuid4
 class User(AbstractUser):
     address = models.CharField(max_length=2000)
     contactNumber = models.CharField(max_length=15)
+    is_Provider = models.BooleanField(default=False)
 
 
     object = UserManager()
+
+
+    def __str__(self) -> str:
+        return super().__str__()
+
 
 
 

@@ -12,4 +12,10 @@ class IsSelforAdmin(permissions.BasePermission):
 
 class IsProviderOrReadOnly(permissions.BasePermission):
     #for role based users for future purpose.
-    pass
+
+    def has_object_permission(self, request, view, obj):
+        if(request.user.is_Provider):
+            return True
+
+        return obj.id == request.user.id
+    
