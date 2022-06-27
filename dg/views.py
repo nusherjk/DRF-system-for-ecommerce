@@ -9,7 +9,7 @@ from rest_framework.views import APIView
 from rest_framework.status import HTTP_200_OK, HTTP_403_FORBIDDEN, HTTP_404_NOT_FOUND
 from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser, IsAuthenticatedOrReadOnly
 from .permissions import IsProviderOrReadOnly, IsSelforAdmin
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse
 from django.core import serializers
 from django.shortcuts import get_object_or_404
 # Create your views here.
@@ -133,8 +133,8 @@ class Productget(ModelViewSet):
 """
 # TODO: Providers can only select categories not create categories
 class CategoryViwset(ModelViewSet):
-    # permission_classes = [IsProviderOrReadOnly]
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsProviderOrReadOnly]
+    # permission_classes = [IsAdminUser]
     serializer_class = CategorySerializer
     queryset = Category.objects.all()
 
