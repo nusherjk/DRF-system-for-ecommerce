@@ -12,6 +12,7 @@ from .permissions import IsProviderOrReadOnly, IsSelforAdmin
 from django.http import HttpResponse
 from django.core import serializers
 from django.shortcuts import get_object_or_404
+from rest_framework.authentication import TokenAuthentication
 # Create your views here.
 
 
@@ -57,7 +58,7 @@ class UserViwset(ModelViewSet):
 
 
 class ProfileViewset(ReadOnlyModelViewSet):
-    #permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     serializer_class = ProfileSerializer
     queryset = User.objects.all()
 
@@ -67,7 +68,8 @@ class ProfileViewset(ReadOnlyModelViewSet):
             permission_classes = [IsAdminUser]
 
         elif(self.action == 'retrieve'):
-            permission_classes= [IsSelforAdmin]
+            # permission_classes= [IsSelforAdmin]
+            permission_classes = [IsAuthenticated]
 
         else:
             permission_classes = [IsAuthenticated]
@@ -76,8 +78,23 @@ class ProfileViewset(ReadOnlyModelViewSet):
     
 
     # TODO: Retrive data of the subject (Work Left!!!)
-    def retrieve(self, request, *args, **kwargs):
-        return Response({"Data":"kichu"})
+    def retrieve(self, request, pk=None, *args, **kwargs):
+
+        query = self.queryset.get(pk=pk)
+        print(query.id)
+        sd=serializers.serialize('json',queryset=query)
+        if sd.is_valid():
+            return Response({"status": HTTP_200_OK, "data": sd.data})
+        # serialized_data = serializers.serialize('json',queryset=queryset)
+        
+        # if not serialized_data.is_valid():
+        #     # print(serialized_data.data)
+        #     return Response({"status": HTTP_200_OK, "data": queryset})
+        # else:
+        #     # print(serialized_data.id)
+        #     # print(serialized_data.data)
+        #     return Response({"status": "dont knw"})
+
 
 
 class ProductViewset(ModelViewSet):
@@ -135,6 +152,7 @@ class Productget(ModelViewSet):
 class CategoryViwset(ModelViewSet):
     permission_classes = [IsProviderOrReadOnly]
     # permission_classes = [IsAdminUser]
+    authentication_classes = (TokenAuthentication,) 
     serializer_class = CategorySerializer
     queryset = Category.objects.all()
 

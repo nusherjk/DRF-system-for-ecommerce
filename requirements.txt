@@ -6,3 +6,4 @@ django-cors-headers
 gunicorn
 django-heroku
 drf-nested-routers
+djangorestframework-simplejwt
