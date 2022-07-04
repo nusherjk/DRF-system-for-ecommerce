@@ -79,22 +79,11 @@ class ProfileViewset(ReadOnlyModelViewSet):
 
     # TODO: Retrive data of the subject (Work Left!!!)
     def retrieve(self, request, pk=None, *args, **kwargs):
-
-        query = self.queryset.get(pk=pk)
-        print(query.id)
+        # query = self.queryset.get(pk=pk)
+        # print(query.id)
         sd=self.serializer_class(instance=self.request.user)
         # if sd.is_valid():
         return Response({"status": HTTP_200_OK, "data": sd.data})
-        # serialized_data = serializers.serialize('json',queryset=queryset)
-        
-        # if not serialized_data.is_valid():
-        #     # print(serialized_data.data)
-        #     return Response({"status": HTTP_200_OK, "data": queryset})
-        # else:
-        #     # print(serialized_data.id)
-        #     # print(serialized_data.data)
-        #     return Response({"status": "dont knw"})
-
 
 
 class ProductViewset(ModelViewSet):
