@@ -82,9 +82,9 @@ class ProfileViewset(ReadOnlyModelViewSet):
 
         query = self.queryset.get(pk=pk)
         print(query.id)
-        sd=serializers.serialize('json',queryset=query)
-        if sd.is_valid():
-            return Response({"status": HTTP_200_OK, "data": sd.data})
+        sd=self.serializer_class(instance=self.request.user)
+        # if sd.is_valid():
+        return Response({"status": HTTP_200_OK, "data": sd.data})
         # serialized_data = serializers.serialize('json',queryset=queryset)
         
         # if not serialized_data.is_valid():
