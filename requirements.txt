@@ -1,9 +1,10 @@
 Django>=3.0
 psycopg2-binary>=2.8
 djangorestframework
-# Pillow==8.1.0
+Pillow==8.1.0
 django-cors-headers
 gunicorn
 django-heroku
 drf-nested-routers
 djangorestframework-simplejwt
+django-environ
